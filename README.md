@@ -6,13 +6,13 @@ The scripts are developed for RSS Guard, but feed readers with similar functiona
 
 Paste the following command into RSS Guard post-processing command (Right click on feed > Edit selected items > Post-processing script)
 
-Windows:
+**Windows**:
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "& ([scriptblock]::Create((Invoke-WebRequest 'https://raw.githubusercontent.com/CarrieForle/fgf-bsky-post-processing/refs/heads/main/post-processing.ps1' -UseBasicParsing).Content))"
 ```
 
-Mac/Linux (require Python3):
+**Mac/Linux** (require Python3):
 
 ```bash
 python3 -c "$(curl -fsL https://raw.githubusercontent.com/CarrieForle/fgf-bsky-post-processing/refs/heads/main/post-processing.py)"
@@ -20,13 +20,13 @@ python3 -c "$(curl -fsL https://raw.githubusercontent.com/CarrieForle/fgf-bsky-p
 
 To replace Bluesky link with Reddit link, use these:
 
-Windows:
+**Windows:**
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "& ([scriptblock]::Create((Invoke-WebRequest 'https://raw.githubusercontent.com/CarrieForle/fgf-bsky-post-processing/refs/heads/main/post-processing.ps1' -UseBasicParsing).Content)) -UseRedditUrl"
 ```
 
-Mac/Linux (require Python3):
+**Mac/Linux** (require Python3):
 
 ```bash
 python3 -c "$(curl -fsL https://raw.githubusercontent.com/CarrieForle/fgf-bsky-post-processing/refs/heads/main/post-processing.py)" --use-reddit-url
@@ -34,6 +34,6 @@ python3 -c "$(curl -fsL https://raw.githubusercontent.com/CarrieForle/fgf-bsky-p
 
 The script will update automatically. If you don't want auto update, swap the URL in the command to the following:
 
-Windows: https://raw.githubusercontent.com/CarrieForle/fgf-bsky-post-processing/d5fd85911401d30e0ac93b48254088d154ef6099/post-processing.ps1
+**Windows**: https://raw.githubusercontent.com/CarrieForle/fgf-bsky-post-processing/e6c9806a44b2beeee1c45c0cd432ad234e58a1d1/post-processing.ps1
 
-Mac/Linux: https://raw.githubusercontent.com/CarrieForle/fgf-bsky-post-processing/d5fd85911401d30e0ac93b48254088d154ef6099/post-processing.py
+**Mac/Linux**: https://raw.githubusercontent.com/CarrieForle/fgf-bsky-post-processing/e6c9806a44b2beeee1c45c0cd432ad234e58a1d1/post-processing.py
